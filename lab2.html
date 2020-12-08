@@ -50,6 +50,29 @@
     clear: both; /* Отмена обтекания */ 
    }
   </style>
+  <script>
+   function g()
+{
+if(document.getElementById("ss2").selectedIndex==0)
+document.getElementById("pic1").src="p0.png";
+ 
+if(document.getElementById("ss2").selectedIndex==1)
+document.getElementById("pic1").src="p1.png";
+ 
+if(document.getElementById("ss2").selectedIndex==2)
+document.getElementById("pic1").src="p2.png";
+ 
+if(document.getElementById("ss2").selectedIndex==3)
+document.getElementById("pic1").src="p3.png";
+}
+   
+function r()
+{
+ 
+ document.getElementById("tt1").value="Привет, Мир!!!";
+
+}
+   </script>
  </head>
  <body>
   <div id="container">
@@ -60,7 +83,7 @@
    <p>4. Создать выпадающее меню, с помощью которого можно выбрать цвет фона документа (создайте четыре варианта цветов).
     Создайте обработку события наезда на картинку мышки появлением строки «ПРИВЕТ,МИР» в многостроковом поле ввода информации некоторой формы данного документа.</p>
    <form action="" method="get">
-    <select name="sl2" id="ll2" onchange="g()">
+    <select name="sl2" id="ss2" onchange="g()">
 <option value="option1" checked>зелёный</option> 
 <option value="option2">красный</option>
 <option value="option3">жёлтый</option>
