@@ -59,7 +59,9 @@ function f(x)
 {var t=parseInt(document.getElementById('tt1').value);
 if(x==1) today.setYear(t); 
 if(x==2) today.setMonth(t);
-if(x==3) today.setDate(t);   
+if(x==3) today.setDate(t); 
+if(x==4) today.getYear(t);
+ 
 document.getElementById('tt1').value="";     } 
    
    function ff()    
@@ -80,7 +82,7 @@ document.getElementById('tt1').value="";     }
       <tr> <td> <input type="button" id="bb4" value="4" onclick="f(4)"> </td> <td> <input type="button" id="bb5" value="5" onclick="f(5)"> </td> <td> <input type="button" id="bb6" value="6" onclick="f(6)"> </td> </tr>
       <tr> <td> <input type="button" id="bb7" value="7" onclick="f(7)"> </td> <td> <input type="button" id="bb8" value="8" onclick="f(8)"> </td> <td> <input type="button" id="bb9" value="9" onclick="f(9)"> </td> </tr></table>
     <tr> <td> <input type="button" id="bb0" value="0" onclick="f(0)"> </td> <td> <input type="button" id="d1" value="День" onclick="g(3)"> </td> <td> <input type="button" id="m1" value="Місяць" onclick="g(2)"> </td> </tr>
-    <tr> <tdcolspan="2"> <input type="button" id="y1" value="Рік" onclick="g(1)"> </td> <td> <input type="button" id="f1" value="Функція" onclick="ff()"> </td> </tr>
+    <tr> <td> <input type="button" id="y1" value="Рік" onclick="g(1)"> </td> <td> <input type="button" id="y2" value="Рік2" onclick="g(4)"> </td> <td> <input type="button" id="f1" value="Функція" onclick="ff()"> </td> </tr>
     <tr> <td> Результат </td> <td colspan="2"><input type="text" name="tx2" id="tt2" value=""></td></tr>
     </form>
     </div>
