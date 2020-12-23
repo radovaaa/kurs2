@@ -53,21 +53,24 @@
   <script src="scripts.js">
    <script>
    function g() 
-   {document.bgColor=
- 
-  (x1.options[0].selected)? x1.options[0].value:"green”;
- 
-document.fgColor=
- 
-  (x1.options[1].selected)? x1.options[1].value:"red”;
- 
-document.linkColor=
- 
-  (x1.options[2].selected)? x1.options[2].value:"yellow”;
+   {
+
+if(document.getElementById("sl1").selectedIndex==0)
+
+document.bgColor="green";
     
-    document.linkColor=
- 
-  (x1.options[3].selected)? x1.options[3].value:"blue”;
+if(document.getElementById("sl1").selectedIndex==1)
+
+document.bgColor="red";
+
+if(document.getElementById("sl1").selectedIndex==2)
+
+document.bgColor="yellow";
+
+if(document.getElementById("sl1").selectedIndex==3)
+
+document.bgColor="blue";
+
 }
 
    
@@ -88,7 +91,7 @@ document.getElementById("area1").value="Привет, Мир!!!";
   <div id="content">
     <h2>Сайт-звіт до лабораторних робіт студентки 2 курсу Стенгач Юлії</h2>
    <h2>Лабораторна робота №2 </h2>
-   <p>4. Создать выпадающее меню, с помощью которого можно выбрать цвет фона документа (создайте четыре варианта цветов).
+   <p>4. ! Создать выпадающее меню, с помощью которого можно выбрать цвет фона документа (создайте четыре варианта цветов).
     Создайте обработку события наезда на картинку мышки появлением строки «ПРИВЕТ,МИР» в многостроковом поле ввода информации некоторой формы данного документа.</p>
    <form action="" method="get">
     <select name="sl2" id="ss2" onchange="g()">
